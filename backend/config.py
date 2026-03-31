@@ -7,16 +7,17 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
 
-    # Server
     HOST: str = "0.0.0.0"
     PORT: int = 8000
 
-    # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000"]
+    ALLOWED_ORIGINS: List[str] = [
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://ai-bug-fixer-mauve.vercel.app",
+    ]
 
-    # AI Provider (e.g. OpenAI, Anthropic)
     AI_API_KEY: str = ""
-    AI_MODEL: str = "gpt-4o"
+    AI_MODEL: str = "llama-3.3-70b-versatile"
 
     class Config:
         env_file = ".env"
