@@ -1,0 +1,42 @@
+:root {
+  --blue: #1A56DB;
+  --blue-dark: #1E429F;
+  --blue-light: #EBF0FF;
+  --bg: #F0F4FF;
+  --surface: #ffffff;
+  --border: #E2E8F0;
+  --text: #1E293B;
+  --text-muted: #6B7280;
+  --text-subtle: #9CA3AF;
+  --success: #10B981;
+  --danger: #DC2626;
+  --danger-bg: #FEF2F2;
+  --danger-border: #FEE2E2;
+  --code-bg: #F8FAFC;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --transition: 0.2s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+textarea, pre, code, input[type="text"] {
+  font-family: "JetBrains Mono", monospace;
+}
+
+button { cursor: pointer; font-family: inherit; }
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
